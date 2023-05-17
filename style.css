@@ -1,0 +1,102 @@
+:root{
+    --cor-pendentes:  #8FD14F;
+    --cor-concluidas: #0CA789;
+    --cor-excluidas:  #EB4045;
+    --cor-letra:      black;
+    --cor-nth:        rgb(209, 207, 207);          
+
+}
+
+
+h1{
+    text-align: center;
+    font-family: sans-serif;
+}
+ul{
+    margin: 60px;
+    text-align: center;
+}
+ div:nth-child(even) {
+background-color: var(--cor-nth);
+ }
+ div:hover{
+    transform: scale(1.1);
+ }
+ div{
+    padding: 0.2px;
+ }
+   
+a {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+a.pendentes {
+    
+    background-color: var(--cor-pendentes);
+    color: var(--cor-letra); 
+    font-family: sans-serif;
+    border-radius: 30px;
+    text-decoration: none; 
+    font-weight: bold
+
+}
+a.concluidas {
+    background-color: var(--cor-concluidas);
+    color: var(--cor-letra);
+    font-family: sans-serif;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold
+    
+}
+a.excluidas {
+    background-color: var(--cor-excluidas);
+    color: var(--cor-letra);
+    font-family: sans-serif;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold
+}
+.tarefasPendentes .tarefa1 {
+    width: 350px;
+    border-radius: 70px;
+    border: 35px;
+    margin: 0 auto;
+    text-decoration: none;
+    background-color: var(--cor-pendentes);
+    font-family: sans-serif;
+}
+.tarefasPendentes .tarefa1:nth-child(even) {
+    background-color: var(--cor-nth);
+}
+
+.tarefasConcluidas .tarefa2 {
+    width: 350px;
+    border-radius: 70px;
+    border: 35px;
+    margin: 0 auto;
+    text-decoration: none;
+    background-color: var(--cor-concluidas);
+    font-family: sans-serif;
+}
+
+.tarefasConcluidas .tarefa2:nth-child(even) {
+    background-color: var(--cor-nth);
+}
+
+.tarefasExcluidas .tarefa3 {
+    width: 350px;
+    border-radius: 70px;
+    border: 35px;
+    margin: 0 auto;
+    text-decoration: none;
+    background-color: var(--cor-excluidas);
+    font-family: sans-serif;
+}
+.tarefasExcluidas .tarefa3:nth-child(even) {
+    background-color: var(--cor-nth);
+}
+
+
+
